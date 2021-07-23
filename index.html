@@ -1,0 +1,56 @@
+<!DOCTYPE>
+<html>
+   <head>
+      <title>Todo List</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel='stylesheet' href='./styles.css' />
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700;900&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   </head>
+   <body>
+      <div class='headerContainer'>
+         <div class='heading'>
+            <h1 class="primaryHeading">Tasks</h1>
+            <h1 class="secondaryHeading">List</h1>
+         </div>
+         <div class="addItem">
+            <span class="iconContainer">
+               <i id='add' class="material-icons large addIcon icon-btn">add</i>
+               Add items
+            </span>
+         </div>
+      </div>
+      <div class='listContainer'>
+      </div>
+      <form class="newListForm form" >
+         <h4>Add New List</h4>
+         <input
+            placeholder="Add new list"
+            name='listname'
+            id='listname'
+            class="input"
+         >
+         <div class="btnContainer">
+            <button id='addSubmit' class="primaryButton">Add</button>
+            <button id='closeForm' class='primaryButton'>Close</button>
+         </div>
+         
+      </form>
+      <form class="newTaskForm form" >
+         <h4>Add New Task</h4>
+         <input
+            placeholder="Add new Task"
+            name='taskName'
+            id='taskName'
+            class="input"
+         >
+         <div class="btnContainer">
+            <button id='addTaskSubmit' class="primaryButton">Add</button>
+            <button id='closeTaskForm' class='primaryButton'>Close</button>
+         </div>
+         
+      </form>
+      <script src='./index.js'></script>
+   </body>
+</html>
